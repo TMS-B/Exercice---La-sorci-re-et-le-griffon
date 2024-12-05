@@ -12,7 +12,7 @@ let fiftyFifty = () => Math.random() < 0.5;
 function luckyCard (){
     if (fiftyFifty() === true){
         moveCharacters ("griffin", -3);
-        console.log("La sorcière met des patates de forain au Griffon, il se fait éjecter par la Sorcière comme à une entrée de boite de nuit.");
+        console.log(`La sorcière met des patates de forain au Griffon.\${positionGriffin}`);
     }else {
         moveCharacters ("witch", 1);
         console.log("Le Griffon a driveby la Sorcière, elle a réussi à esquiver les balles. Elle est dans le quartier d'après. +1 case.")
